@@ -125,4 +125,15 @@ footer {
     .nav-toggle-label {
         display: none;
     }
+
+    #logo {
+        font-size: 200%;
+        /*create space on top of logo*/
+        line-height: 75px;
+    }
+
+    main {
+        /*Push main content down to accomodate larger header*/
+        margin-top: 79px;
+    }
 }
