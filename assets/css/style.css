@@ -92,11 +92,37 @@ main {
     background-color: lightblue;
     /*Make main element take up any surplus space to push footer down with flex*/
     flex: 1 0 auto;
-    /*main content not covered by navbar*/
+    /*main content not covered by fixed header*/
     margin-top: 47px;
 }
 
 /*footer*/
 footer {
     background-color: orange;
+}
+
+/*Media query: tablets and larger (768px and up)*/
+@media screen and (min-width: 768px) {
+    /*Header*/ 
+    nav {
+        display: block;
+        position: relative;
+        box-shadow: none;
+        width: fit-content;
+        padding-right: 1rem;
+    }
+
+    #menu {
+        display: flex;
+    }
+    
+    /*Space out nav list items*/
+    #menu > li {
+        padding-left: 1rem;
+    }
+
+    /*Hide toggle for larger screens*/
+    .nav-toggle-label {
+        display: none;
+    }
 }
